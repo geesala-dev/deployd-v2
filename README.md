@@ -132,3 +132,5 @@ The macosx installer is deprecated. The recommended way is now npm (`npm install
     limitations under the License.
 
     Copyright 2017 deployd llc
+
+## upgrading packages to support node latest versions 
