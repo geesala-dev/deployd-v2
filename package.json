@@ -1,14 +1,15 @@
 {
-  "name": "deployd",
-  "version": "1.2.0",
-  "author": "Ritchie Martori",
+  "name": "deployd-v2",
+  "version": "1.0.0",
+  "author": "Bala",
   "license": "Apache-2.0",
   "description": "the simplest way to build realtime APIs for web and mobile apps",
   "repository": {
-    "url": "git://github.com/deployd/deployd.git"
+    "url": "https://github.com/geesala-dev/deployd-v2.git"
   },
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 18.0.0",
+    "npm": ">= 8.0.0"
   },
   "main": "index",
   "files": [
@@ -18,32 +19,33 @@
     "README.md"
   ],
   "dependencies": {
-    "async": "^2.6.2",
-    "bluebird": "^3.5.3",
-    "cookies": "^0.7.3",
+    "async": "3.2.4",
+    "axios": "1.5.0",
+    "bluebird": "3.7.2",
+    "cookies": "0.8.0",
     "corser": "^2.0.1",
-    "debug": "^2.2.0",
-    "doh": "^0.0.4",
-    "mongodb": "^2.2.7",
-    "qs": "^6.2.1",
-    "request": "2.88.0",
+    "debug": "4.3.4",
+    "dohv2": "^0.0.4",
+    "mongodb": "6.0.0",
+    "phantomjs-prebuilt": "^2.1.16",
+    "qs": "6.11.2",
     "scrubber": "0.0.0",
-    "send": "^0.16.2",
-    "shelljs": "^0.8.3",
-    "socket.io": "^1.7.4",
-    "underscore": "^1.9.1",
+    "send": "0.18.0",
+    "shelljs": "0.8.5",
+    "socket.io": "4.7.2",
+    "underscore": "1.13.6",
     "validation": "0.0.1"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
+    "chai": "4.3.8",
     "deployd-cli": "^2.0.0",
-    "less": "^3.9.0",
-    "mocha": "^5.2.0",
+    "less": "4.2.0",
+    "mocha": "^10.2.0",
     "mocha-jshint": "2.3.1",
     "mocha-phantomjs": "^4.1.0",
-    "rewire": "~3.0.2",
-    "sinon": "^7.2.7",
-    "standard-version": "^4.4.0"
+    "rewire": "7.0.0",
+    "sinon": "15.2.0",
+    "standard-version": "9.5.0"
   },
   "scripts": {
     "pretest": "npm link && cd test-app && npm install && npm link deployd",
