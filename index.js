@@ -1,5 +1,5 @@
 var Server = require('./lib/server')
-  , upgrade = require('doh').upgrade;
+  , upgrade = require('dohv2').upgrade;
 
 /**
  * export a simple function that constructs a dpd server based on a config
